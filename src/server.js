@@ -12,7 +12,6 @@ const server = new GraphQLServer({
 });
 
 server.express.use(logger("dev"));
-server.start()
 server.start({
     port: PORT
 }).then(r => () => console.log(`✅ Server running on http://localhost:${PORT}`));

@@ -2,8 +2,8 @@ type User {
   id: ID! @id
   username: String! @unique
   email: String! @unique
-  firstname: String! @default(value: "")
-  lastname: String!
+  firstname: String @default(value: "")
+  lastname: String @default(value: "")
   bio: String
   posts: [Post!]!
   likes: [Like!]!

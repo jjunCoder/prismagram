@@ -1,0 +1,3 @@
+type Mutation {
+    unfollowing(id: String!): Boolean!
+}

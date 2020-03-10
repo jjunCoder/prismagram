@@ -25,9 +25,7 @@ const verifyUser = async (payload, done) => {
 // passport authenticate middleware
 export const authenticateJwt = (req, res, next) =>
     passport.authenticate("jwt", { sessions: false }, (err, user) => {
-        if (user) {
-            req.user = user
-        }
+        if (user) { req.user = user }
         next();
     })(req, res, next);
 

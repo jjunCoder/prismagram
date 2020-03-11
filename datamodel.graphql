@@ -20,14 +20,14 @@ type Post {
   caption: String!
   user: User!
   files: [File!]!
-  likes: [Like!]!
+  likes: [Like!]! @relation(name: "PostToLike", onDelete: CASCADE)
   comments: [Comment!]!
 }
 
 type Like {
   id: ID! @id
   user: User!
-  post: Post!
+  post: Post @relation(name: "PostToLike")
 }
 
 type Comment {

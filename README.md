@@ -1,4 +1,5 @@
 # prismagram
+
 instagram clone with Express + Prisma + React and React Native
 
 ## User Stories
@@ -18,8 +19,8 @@ instagram clone with Express + Prisma + React and React Native
 - [x] See the full post
 - [x] Upload a photo
 - [x] Edit the photo (Delete)
-- [ ] See the feed
+- [x] See the feed
 - [ ] See room list
-- [ ] See room
+- [x] See room
 - [ ] Send private Message
 - [ ] Receive Message (Realtime)
